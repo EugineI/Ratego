@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('path/to/gilroy-font.woff2') format('woff2'),
+         url('path/to/gilroy-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy', Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+
+  /* Navigation Menu Styles */
+  header {
+    background-color: #000;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .contact a {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    margin-left: auto;
+    text-decoration: none;
+}
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .in {
+    margin-right: auto;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0 1rem;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Gilroy', Arial, sans-serif;
+    transition: color 0.3s ease;
+  }
+
+  nav a.nav-enigma {
+    background: linear-gradient(to right, #27504F, #1DC8CC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    color: #ccc;
+  }
+
+  /* Hero Section Styles */
+  .hero {
+    padding: 5rem 0;
+    background-color: #000;
+    color: #fff;
+  }
+
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Gilroy', Arial, sans-serif;
+  }
+
+  .hero h1 span, span {
+    background: linear-gradient(to right, #27504F, #1DC8CC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-style: italic;
+  }
+
+  .btn {
+    display: inline-block;
+    background: linear-gradient(to right, #27504F, #1DC8CC);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-family: 'Gilroy', Arial, sans-serif;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+  }
+
+  .btn:hover {
+    background-color: #00b3b3;
+  }
+
+  /* Footer Styles */
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  .about-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+}
+.text-container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.ratego {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    background-color: black;
+}
+
+.ratego img {
+    max-width: 200px; /* Adjust size as needed */
+    margin-right: 20px;
+    cursor: pointer; /* Indicate interactivity */
+}
+
+.text-container {
+    position: relative;
+    max-width: 500px;
+    max-height: 800px; /* Adjust width as needed */
+}
+
+.hover-text {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007BFF; /* Customize color as needed */
+}
+
+.hidden-text {
+    display: none;
+    margin-top: 20px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.ratego img:hover + .text-container .hidden-text {
+    display: block;
+}
+
+.ratego img:hover + .text-container .hover-text {
+    display: none;
+}
+.text-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.text-container .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.text-container span {
+    color: #007BFF; /* Customize the color as needed */
+}
+
+/* Optional: Add some space between the sections */
+.about-section > div {
+    margin: 10px;
+}
+
+/* Ensure the text container overlays the image slightly */
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px; /* Adjust as needed */
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: -1;
+}
