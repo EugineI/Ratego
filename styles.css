@@ -218,15 +218,13 @@
 }
 
 .text-container span {
-    color: #007BFF; /* Customize the color as needed */
+    color: #007BFF; 
 }
 
-/* Optional: Add some space between the sections */
 .about-section > div {
     margin: 10px;
 }
 
-/* Ensure the text container overlays the image slightly */
 .image-container::before {
     content: "";
     position: absolute;
@@ -242,12 +240,12 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 100%; /* Adjust as needed */
+  height: 100%; 
 }
 
 .mission, .vision {
   text-align: center;
-  padding: 20px; /* Adjust padding as needed */
+  padding: 20px;
   display: none;
 }
 
@@ -259,11 +257,29 @@
 }
 
 .separator {
-  display: none; /* Initially hidden */
+  display: none;
 }
 
 .appear:hover .separator ,
 .mission, .vision{
-  display: block; /* Show separator on hover */
+  display: block; 
+}
+/* Style for the .end container */
+.end {
+  background-image: url('vectors/Behind\ the\ quote.svg'); 
+  background-size: cover; 
+  background-position: center; 
+  padding: 50px; 
+  color: white; 
 }
 
+/* Style for the .content container */
+.content {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
