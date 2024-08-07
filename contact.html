@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma Big Data Labs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class ="white">
+  <header>
+    <div class="nav-container">
+      <nav>
+        <ul>
+          <li class = "in"><a href="index.html" class="nav-enigma"><img src="logo.png" alt="our logo"></a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="ratego.html">Ratego</a></li>
+          <li><a href="approach.html">Our Approach</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li class="contact"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <main>
+      <div>
+        <H1>Contact out Team</H1>
+       <p>Got any questions about the products or services on our platform? We're here to help.</p>
+       <p>Chat to our friendly team for further assistance.</p> 
+      </div>
+      
+    <div>
+        <form id="contactForm">
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <H1>Chat with Us</H1>
+                <p>Speak to our friendly team.</p>
+                
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <h2><img src="vectors/email.png" alt="email">Send us an email</h2>
+                <p>infor@enigmabigdatalabs.com</p>
+                
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <h1>Call us</h1>
+                <p>Call our Team Mon-Fri from 8am to 5pm.</p>
+                <p><img src="vectors/call.png" alt="call:">+254712312312</p>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <h1>Visit us</h1>
+                <p>Chat to us in person at our Nairobi branch</p>
+                <p><img src="vectors/location.png" alt="location:"><u>Casamia, Ngong road, Suit A1-16, 16th Floor</u></p>
+            </div>
+            <div class="submit">
+                <button type="submit">Send us a Message →</button>
+            </div>
+        </form>
+    </div>
+    
+    </main>
+    
+     
+</body>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const formData = new FormData(this);
+        
+        const messageContent = `
+            First Name: ${formData.get('firstName')}
+            Last Name: ${formData.get('lastName')}
+            Email: ${formData.get('email')}
+            Phone Number: ${formData.get('phone')}
+            Message: ${formData.get('message')}
+        `;
+        
+        const phoneNumber = '+254712312312';
+        
+        console.log('Sending message to ' + phoneNumber + ':');
+        console.log(messageContent);
+        
+        this.reset();
+    });
+</script>
+
+<footer>
+    <p>&copy; 2023 Enigma Big Data Labs. All rights reserved.</p>
+</footer> 
+</html>
