@@ -402,25 +402,25 @@
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 .submit {
-  width: 50%; /* Set width to half of the page */
-  margin: 20px auto; /* Center the container horizontally with some margin */
-  text-align: center; /* Center align the button text */
+  width: 50%; 
+  margin: 20px auto; 
+  margin-right: auto;
 }
 
 .submit button {
-  width: 100%; /* Make the button fill the entire width of the container */
-  padding: 12px; /* Adjust padding as needed */
-  background-color: #008b8b; /* Dark cyan background */
-  color: #fff; /* White text color */
-  border: none; /* Remove border */
+  width: 100%;
+  padding: 12px; 
+  background-color: #008b8b; 
+  color: #fff; 
+  border: none;
   margin-left: auto;
-  border-radius: 5px; /* Rounded corners */
-  font-size: 1.2rem; /* Example font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .submit button:hover {
-  background-color: #005f5f; /* Darker cyan on hover */
+  background-color: #005f5f;
 }
 
