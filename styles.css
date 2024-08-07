@@ -237,3 +237,33 @@
     background: rgba(255, 255, 255, 0.9);
     z-index: -1;
 }
+.appear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%; /* Adjust as needed */
+}
+
+.mission, .vision {
+  text-align: center;
+  padding: 20px; /* Adjust padding as needed */
+  display: none;
+}
+
+.mission img,
+.vision img,
+.separator {
+  max-width: 100%;
+  height: auto;
+}
+
+.separator {
+  display: none; /* Initially hidden */
+}
+
+.appear:hover .separator ,
+.mission, .vision{
+  display: block; /* Show separator on hover */
+}
+
