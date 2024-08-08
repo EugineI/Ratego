@@ -23,79 +23,95 @@
     </div>
   </header>
     <main>
-      <div>
-        <H1>Contact out Team</H1>
-       <p>Got any questions about the products or services on our platform? We're here to help.</p>
-       <p>Chat to our friendly team for further assistance.</p> 
-      </div>
       
-    <div>
+      <div class="contact-container">
         <form id="contactForm">
             <div>
-                <table>
-                    <tr>
-                        <td><label for="firstName">First Name:</label></td>
-                        <td><label for="lastName">Last Name:</label>
-                    </tr>
-                    <tr>
-                        </td><td><input type="text" id="firstName" name="firstName" required></td>
-                        <td><input type="text" id="lastName" name="lastName" required></td>
-                    </tr>
-                    
-                    
-                    
-                    
-                    <H1>Chat with Us</H1>
+                <H1>Contact out Team</H1>
+                <p>Got any questions about the products or services on our platform? We're here to help.</p>
+                <p>Chat to our friendly team for further assistance.</p> 
+            </div>
+      
+            <div class="form-row">
+                <div class="form-section">
+                    <label for="firstName">First Name:</label>
+                    <input class="formR" type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-section">
+                    <label for="lastName">Last Name:</label>
+                    <input class="formR" type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-info">
+                    <h1>Chat with Us</h1>
                     <p>Speak to our friendly team.</p>
-                </table>
-                
-            </div>
-            <div>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required>
-                <h2><img src="vectors/email.png" alt="email">Send us an email</h2>
-                <p><u>infor@enigmabigdatalabs.com</u></p>
-                
-            </div>
-            <div>
-                <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone" required>
-                <h1>Call us</h1>
-                <p>Call our Team Mon-Fri from 8am to 5pm.</p>
-                <p><img src="vectors/call.png" alt="call:"><u>+254712312312</u></p>
-            </div>
-            <div>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <h1>Visit us</h1>
-                <p>Chat to us in person at our Nairobi branch</p>
-                <p><img src="vectors/location.png" alt="location:"><u>Casamia, Ngong road, Suit A1-16, 16th Floor</u></p>
-            </div>
-            <h3>Services</h3>
-            <div id="webDesignCheckboxes">
-                <div class="checkbox-row">
-                    <label><input type="checkbox" name="webDesign" value="option1"> Website Design</label>
-                    <label><input type="checkbox" name="webDesign" value="option2"> Website Design</label>
-                </div>
-                <div class="checkbox-row">
-                    <label><input type="checkbox" name="webDesign" value="option3"> Website Design</label>
-                    <label><input type="checkbox" name="webDesign" value="option4"> Website Design</label>
-                </div>
-                <div class="checkbox-row">
-                    <label><input type="checkbox" name="webDesign" value="option5"> Website Design</label>
-                    <label><input type="checkbox" name="webDesign" value="option6"> Website Design</label>
                 </div>
             </div>
-            
+            <div class="form-row">
+                <div class="form-section">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-info">
+                    <h2><img src="vectors/email.png" alt="email">Send us an email</h2>
+                    <p><u>info@enigmabigdatalabs.com</u></p>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-section">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-info">
+                    <h1>Call us</h1>
+                    <p>Call our Team Mon-Fri from 8am to 5pm.</p>
+                    <p><img src="vectors/call.png" alt="call"><u>+254712312312</u></p>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-section">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-info">
+                    <h1>Visit us</h1>
+                    <p>Chat to us in person at our Nairobi branch</p>
+                    <p><img src="vectors/location.png" alt="location"><u>Casamia, Ngong road, Suit A1-16, 16th Floor</u></p>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-section">
+                    <h3>Services</h3>
+                    <table>
+                    <div id="webDesignCheckboxes">
+                        <tr>
+                            <div class="checkbox-row">
+                                <td><label><input type="checkbox" name="webDesign" value="option1"> Website Design</label></td>
+                                <td><label><input type="checkbox" name="webDesign" value="option2"> Website Design</label></td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="checkbox-row">
+                                <td><label><input type="checkbox" name="webDesign" value="option3"> Website Design</label></td>
+                                <td><label><input type="checkbox" name="webDesign" value="option4"> Website Design</label></td> 
+                            </div>
+                        </tr>  
+                        <tr>
+                            <div class="checkbox-row">
+                                <td><label><input type="checkbox" name="webDesign" value="option5"> Website Design</label></td>
+                                <td><label><input type="checkbox" name="webDesign" value="option6"> Website Design</label></td>
+                            </div>
+                        </tr>
+                        
+                    </div>
+                    </table>
+                </div>
+            </div>
             <div class="submit">
                 <button type="submit">Send us a Message →</button>
             </div>
         </form>
     </div>
-    
     </main>
-    
-     
 </body>
 <script>
     document.getElementById('contactForm').addEventListener('submit', function(event) {
