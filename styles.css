@@ -14,7 +14,6 @@
     color: #fff;
   }
 
-  /* Navigation Menu Styles */
   header {
     background-color: #000;
     padding: 1rem 0;
@@ -51,6 +50,9 @@
     margin: 0;
     padding: 0;
   }
+  foot ul {
+    list-style-type: none;
+  }
 
   nav li {
     margin: 0 1rem;
@@ -82,7 +84,6 @@
     color: #ccc;
   }
 
-  /* Hero Section Styles */
   .hero {
     padding: 5rem 0;
     background-color: #000;
@@ -278,7 +279,6 @@ body:hover .hidden-text-container {
 .mission, .vision{
   display: block; 
 }
-/* Style for the .end container */
 .end {
   background-image: url('vectors/Behind\ the\ quote.svg'); 
   background-size: cover; 
@@ -287,7 +287,7 @@ body:hover .hidden-text-container {
   color: white; 
 }
 
-/* Style for the .content container */
+
 .content {
   background-color: rgba(0, 0, 0, 0.5); 
   padding: 20px;
@@ -451,8 +451,8 @@ form {
 }
 
 .form-info {
-  flex: 2; /* Allow form info to take up more space */
-  min-width: 300px; /* Minimum width for the info section */
+  flex: 2;
+  min-width: 300px;
 }
 
 label {
@@ -534,7 +534,7 @@ h1, h2, h3 {
 }
 
 .cox, .cov {
-  width: 50%; /* Adjust as needed */
+  width: 50%;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -546,7 +546,7 @@ h1, h2, h3 {
 }
 
 .cox ul {
-  max-height: 100%; /* Full height */
+  max-height: 100%;
 }
 
 .cov {
@@ -584,12 +584,11 @@ h1, h2, h3 {
 .cox {
   width: 300px; 
   height: 400px;
-  overflow-y: scroll; /* Enable vertical scrolling */
+  overflow-y: scroll;
   padding-right: 20px; 
   position: relative;
 }
 
-/* Custom scrollbar styles for Webkit browsers */
 .cox::-webkit-scrollbar {
   width: 5px;
   margin-left: auto;
@@ -604,7 +603,6 @@ h1, h2, h3 {
   border-radius: 10px;
 }
 
-/* For Firefox */
 .cox {
   scrollbar-width: thin;
   scrollbar-color: #4CAF50 #f1f1f1;
@@ -705,4 +703,102 @@ body {
   width: 250px; 
   height: 460px; 
   background-color: #ccc;
+}foot {
+  background-color: #272726;
+  color: #fff; 
+  padding:20px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  border-radius: 12% 12% 0 0;
+}
+
+.entire {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 10px;
+  border-radius: 10% 10% 0 0; 
+  width: 100%;
+}
+
+.entire div {
+  flex: 1;
+  margin: 0 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+u {
+  font-weight: bold;
+}
+img[src="logo.png"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+pf {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 10px;
+}
+img[src^="vectors/"] {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+main{
+  flex: 1;
+  padding: 20px; 
+}
+
+h3 {
+  margin: 0;
+  padding: 20px 0; 
+  text-align: left; 
+  font-size: 14px; 
+  line-height: 1.4; 
+}
+.serv img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.data, .AI, .ml, .iot, .mod {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 20px;
+}
+
+
+.p1, .p2 {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.p1 {
+  text-align: right;
+}
+
+.p2 {
+  text-align: left;
 }
