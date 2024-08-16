@@ -6,6 +6,124 @@
     <title>Enigma Big Data Labs</title>
     <link rel="shortcut icon" href="fav.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Basic reset */
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+      }
+
+      main {
+          flex: 1;
+          padding: 20px;
+      }
+
+      .entire div {
+          flex: 1;
+          margin: 0 10px;
+      }
+
+      ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+      }
+
+      li {
+          margin-bottom: 10px;
+      }
+
+      a {
+          color: #fff;
+          text-decoration: none;
+      }
+
+      a:hover {
+          text-decoration: underline;
+      }
+
+      img[src^="vectors/"] {
+          vertical-align: middle;
+          margin-right: 8px;
+      }
+
+      hr {
+          border: 0;
+          border-top: 1px solid #0a0a0a;
+          margin: 20px 0;
+      }
+      .h {
+          border-top: 1px solid #ccc;
+          margin: 20px 0;
+          width: 50%;           
+      }
+
+      pf {
+          text-align: left;
+          font-size: 12px;
+          margin-top: 10px;
+      }
+      .titl {
+          font-size: 35px;
+      }
+      .contet {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.arrow-text {
+    position: relative;
+    margin-left: 40px; /* Space between the image and the text */
+}
+.arrow {
+    position: relative;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+}
+
+.arrow::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-right-color: black;
+    border-left-width: 0;
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+    transform: rotate(-45deg);
+    top:240px;
+    left: -90px; 
+}
+
+.arrow::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 200px;
+    border: 3px solid transparent;
+    border-right-color: black;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    top: 80px; 
+    left: -80px;
+}
+
+.arrow-text p {
+    margin: 0;
+    font-size: 24px;
+    color: #110909;
+    transition: font-size 0.3s ease;
+}
+
+.arrow-text:hover p {
+    font-size: 30px;
+}
+  </style>
 </head>
 <body>
   <header>
@@ -23,22 +141,29 @@
       </nav>
     </div>
   </header>
-    <main>
+  <main>
       <h1>Ratego</h1>
-      <div class="ratego">
+      <div class="ratat">
+        <div class="ratego">
         <video autoplay muted loop id="background-video">
             <source src="ratego.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="contet">
             <img src="vectors/Ratego dude.svg" alt="ratego" class="ratego-image">
-            <p class="hover-text">Hover to interact</p>
+            <div class="arrow-text">
+                <div class="arrow"></div>
+                <p>Hover to interact</p>
+            </div>
+            
         </div>
-    </div>
-    <div class="hidden-text-container">
-        <p class="hidden-text">Ratego is designed to deliver unprecedented levels of intelligence and efficiency, ensuring that every task is executed with passion and speed.</p>
-        <p class="hidden-text">Introducing Ratego, our cutting-edge AI powerhouse engineered to transform your technological interactions. Ratego is not just another AI tool; it represents a paradigm shift in how artificial intelligence can enhance and streamline your daily tasks. With its advanced algorithms and state-of-the-art machine learning capabilities, Ratego is designed to deliver unprecedented levels of intelligence and efficiency, ensuring that every task is executed with precision and speed.</p>
-    </div>
+      </div>
+      </div>
+      
+            <div class="hidden-text-container">
+                <p class="hidden-text">Ratego is designed to deliver unprecedented levels of intelligence and efficiency, ensuring that every task is executed with passion and speed.</p>
+                <p class="hidden-text">Introducing Ratego, our cutting-edge AI powerhouse engineered to transform your technological interactions. Ratego is not just another AI tool; it represents a paradigm shift in how artificial intelligence can enhance and streamline your daily tasks. With its advanced algorithms and state-of-the-art machine learning capabilities, Ratego is designed to deliver unprecedented levels of intelligence and efficiency, ensuring that every task is executed with precision and speed.</p>
+            </div>
       <div>
         <h1>Discover the Advantages of Ratego</h1>
       </div>
@@ -69,15 +194,42 @@
       <h1>The Future is Ratego...</h1>
       <p>With Ratego by your side, you'll unlock new levels of productivity, efficiency, and customer engagement. Our AI driven solutions are designed to adapt to your unique needs, providing you with the tools to succeed in an ever-evolving digital landscape. Discover the unparalleled potential of Ratego and redefine what is possible with artificial intelligence.</p>
       <a href="contact.html" class="touch">Get in touch</a>
-  </div>
-  
-    
-    </main>
-    
-    <footer>
-      <p>&copy; 2023 Enigma Big Data Labs. All rights reserved.</p>
-    </footer>
-    
+</main>
+      <foot>
+        <img src="vectors/LOG.png" alt="Logo">
+        <div class="entire">
+            <div class="f1">
+                <ul>
+                    <li><u>Products</u></li>
+                    <li>SMART Ingress</li>
+                    <li>SMARTROP</li>
+                    <li>SMARTROP</li>
+                    <li>SMART Transit</li>
+                    <li>SMART Interactor</li>
+                    <li>Future-Proof Solutions</li>
+                </ul>
+            </div>
+            <div class="f2">
+                <ul>
+                    <li><u>Quick links</u></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="ratego.html">Ratego</a></li>
+                    <li><a href="about.html">Our Values</a></li>
+                    <li><a href="approach.html">Our Approach</a></li>
+                </ul>
+            </div>
+            <div class="f3">
+                <ul>
+                    <li><u>Support</u></li>
+                    <li><img src="vectors/TEL.png" alt="call">+254-(0)204402843</li>
+                    <li><img src="vectors/mobi.png" alt="call">+254-(0)711296168/736635571</li>
+                    <li><img src="vectors/EM.png" alt="call">info@enigmabigdatalabs.com</li>
+                    <li><img src="vectors/LOC.png" alt="call">Casamia, Ngong Road, Suit A1-16 16th Floor</li>
+                </ul>
+            </div>
+        </div>
+        <pf>Copyright &copy; 2023 Enigma Big Data Labs. All rights reserved.</pf>
+    </foot>  
 </body>
 </html>
 
