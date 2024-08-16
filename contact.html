@@ -6,6 +6,36 @@
     <title>Enigma Big Data Labs</title>
     <link rel="shortcut icon" href="fav.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #lastName, #firstName{
+            width:50%;
+            padding:10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-right: 0px;
+        }
+        #lastName{
+            width:100%;
+        }
+        .np{
+            position:absolute;
+            left:20%;
+            top:40%;
+        }
+        .form-section {
+    flex: 1;
+    min-width: 200px;
+    margin-right: -5px; /* Negative margin to bring the sections closer together */
+}
+
+.form-section:last-child {
+    margin-right: 0; /* Remove right margin for the last form section */
+}
+
+    </style>
+
 </head>
 <body class ="white">
   <header>
@@ -36,12 +66,15 @@
             <div class="form-row">
                 <div class="form-section">
                     <label for="firstName">First Name:</label>
-                    <input class="formR" type="text" id="firstName" name="firstName" required>
+                    <input class="formR" type="text" id="firstName" placeholder="John" name="firstName" required>
                 </div>
-                <div class="form-section">
-                    <label for="lastName">Last Name:</label>
-                    <input class="formR" type="text" id="lastName" name="lastName" required>
+                <div class="np">
+                    <div class="form-section">
+                        <label for="lastName">Last Name:</label>
+                        <input class="formR" type="text" placeholder="Doe" id="lastName" name="lastName" required>
+                    </div>
                 </div>
+                
                 <div class="form-info">
                     <h1>Chat with Us</h1>
                     <p>Speak to our friendly team.</p>
@@ -50,7 +83,7 @@
             <div class="form-row">
                 <div class="form-section">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="johndoe20@gmail.com" required>
                 </div>
                 <div class="form-info">
                     <h2><img src="vectors/email.png" alt="email">Send us an email</h2>
@@ -60,9 +93,10 @@
             <div class="form-row">
                 <div class="form-section">
                     <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" id="phone" placeholder="+254712312312"name="phone" required>
                 </div>
                 <div class="form-info">
+                    <br><br><br>
                     <h1>Call us</h1>
                     <p>Call our Team Mon-Fri from 8am to 5pm.</p>
                     <p><img src="vectors/call.png" alt="call"><u>+254712312312</u></p>
@@ -71,9 +105,10 @@
             <div class="form-row">
                 <div class="form-section">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" placeholder="Leave us amessage..." name="message" rows="4" required></textarea>
                 </div>
                 <div class="form-info">
+                    <br><br><br>
                     <h1>Visit us</h1>
                     <p>Chat to us in person at our Nairobi branch</p>
                     <p><img src="vectors/location.png" alt="location"><u>Casamia, Ngong road, Suit A1-16, 16th Floor</u></p>

@@ -46,11 +46,6 @@
           text-decoration: underline;
       }
 
-      img[src^="vectors/"] {
-          vertical-align: middle;
-          margin-right: 8px;
-      }
-
       hr {
           border: 0;
           border-top: 1px solid #0a0a0a;
@@ -77,12 +72,13 @@
 }
 .arrow-text {
     position: relative;
-    margin-left: 40px; /* Space between the image and the text */
+    margin-left: 260px;
+    margin-top: -180px;
 }
 .arrow {
     position: relative;
     width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
+    height: 100px;
 }
 
 .arrow::before {
@@ -123,6 +119,12 @@
 .arrow-text:hover p {
     font-size: 30px;
 }
+.headrat{
+    color:black;
+    position: absolute;
+    top: 0%;
+    left:48%;
+}
 main{
   padding: 80px;
 }
@@ -145,13 +147,17 @@ main{
     </div>
   </header>
   <main>
-      <h1>Ratego</h1>
+        
       <div class="ratat">
         <div class="ratego">
+            
         <video autoplay muted loop id="background-video">
             <source src="ratego.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <div class="headrat">
+            <h1>Ratego</h1>
+        </div>
         <div class="contet">
             <img src="vectors/Ratego dude.svg" alt="ratego" class="ratego-image">
             <div class="arrow-text">
